@@ -4,7 +4,7 @@
 
 End::End()
 {
-	backGroundDraw = LoadGraph("media\\game.png");
+	backGroundDraw = LoadGraph("media\\end.png");
 }
 
 

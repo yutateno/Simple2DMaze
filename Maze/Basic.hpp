@@ -14,7 +14,7 @@
 // ƒV[ƒ“‚Ì“®‚«
 enum class ESceneNumber
 {
-	TITLE, GAME
+	TITLE, GAME, END
 };
 
 

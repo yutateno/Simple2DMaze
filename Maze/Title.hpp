@@ -14,11 +14,24 @@ private:
 
 
 	// マップ
-	int* map[32];
+	int* map[18];
+
+
+	// マップ生成時の座標位置
+	int mapX, mapY;
+
+
+	// マップ生成までのカウント
+	int mapCreateCount;
 
 
 	// マップ生成完了
 	bool mapCreateEnd;
+
+
+	// 数値入力保持変数
+	int line;
+	int lineMath;
 
 
 

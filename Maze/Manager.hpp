@@ -3,6 +3,7 @@
 
 #include "Title.hpp"
 #include "Game.hpp"
+#include "End.hpp"
 
 
 
@@ -26,8 +27,8 @@ private:
 	bool gameEnd;
 
 	// ƒ}ƒbƒv
-	int map[32][18];
-	int* tempMap[32];
+	int map[18][32];
+	int* tempMap[18];
 
 
 public:

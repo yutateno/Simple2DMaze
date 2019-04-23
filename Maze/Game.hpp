@@ -13,8 +13,37 @@ private:
 	int backGroundDraw;
 
 
+	// プレイヤー
+	int player;
+
+
+	// プレイヤー位置
+	int playX, playY;
+
+
+	// ブロック
+	int block;
+
+
+	// ゴール
+	int goal;
+
+
+	// スター
+	int star;
+
+
+	// スターの座標
+	int starX[3];
+	int starY[3];
+
+
+	// 見えなくする
+	bool blind;
+
+
 	// マップ
-	int* map[32];
+	int* map[18];
 
 
 

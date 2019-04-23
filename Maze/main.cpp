@@ -1,4 +1,5 @@
 #include "Manager.hpp"
+#include "Input.hpp"
 
 
 
@@ -41,7 +42,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;			// エラーが起きたら直ちに終了
 	}
 
-
+	SetFontSize(26);
 	SetAlwaysRunFlag(TRUE);			// 裏でもアクティブにする
 	SetMouseDispFlag(FALSE);		// マウスカーソルを非表示にする
 
@@ -52,10 +53,16 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SetDrawScreen(DX_SCREEN_BACK);	// 背景描画
 
 
+	PadData::SetPadNum();
+
+
 	// ゲームの核
 	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0 && !p_manager.GetEnd())
 	{
 		ClearDrawScreen();
+
+		KeyData::UpDate();
+		PadData::UpDate();
 
 		p_manager.Update();
 

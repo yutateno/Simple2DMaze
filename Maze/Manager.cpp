@@ -32,6 +32,20 @@ void Manager::SceneChange()
 		break;
 
 
+		// エンディング
+	case ESceneNumber::END:
+		POINTER_RELEASE(p_baseMove);
+		for (int i = 0; i != std::extent<decltype(map), 0>::value; ++i)
+		{
+			for (int j = 0; j != std::extent<decltype(map), 1>::value; ++j)
+			{
+				map[i][j] = -1;
+			}
+		}
+		p_baseMove = new End();
+		p_baseMove->SetScene(BASICPARAM::e_nowScene);
+
+
 	default:
 		break;
 	}

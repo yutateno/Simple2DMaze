@@ -25,6 +25,10 @@ private:
 	// ゲームを終了する
 	bool gameEnd;
 
+	// マップ
+	int map[32][18];
+	int* tempMap[32];
+
 
 public:
 	// コンストラクタ

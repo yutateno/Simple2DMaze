@@ -152,6 +152,7 @@
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="Basic.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Title.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="BaseScene.hpp" />
     <ClInclude Include="Basic.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Input.hpp" />
     <ClInclude Include="Manager.hpp" />
     <ClInclude Include="Title.hpp" />
   </ItemGroup>

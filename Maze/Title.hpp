@@ -13,10 +13,18 @@ private:
 	int backGroundDraw;
 
 
+	// マップ
+	int* map[32];
+
+
+	// マップ生成完了
+	bool mapCreateEnd;
+
+
 
 public:
-	// コンストラクタ
-	Title();
+	// コピーコンストラクタ
+	Title(int** map);
 
 	// デストラクタ
 	~Title();

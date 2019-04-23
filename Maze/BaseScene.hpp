@@ -1,5 +1,9 @@
 #pragma once
 #include "Basic.hpp"
+#include <vector>
+
+
+enum class MAPStep { None, Block, Start, Goal };
 
 
 /*

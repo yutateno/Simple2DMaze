@@ -13,10 +13,14 @@ private:
 	int backGroundDraw;
 
 
+	// マップ
+	int* map[32];
+
+
 
 public:
-	// コンストラクタ
-	Game();
+	// コピーコンストラクタ
+	Game(int** map);
 
 	// デストラクタ
 	~Game();
